@@ -23,21 +23,26 @@ namespace Program
         char a;
         
         private void Add_Click(object sender, EventArgs e)
-        {         
-            students.Add(textBox2.Text,a);
-            Console.WriteLine("The Hashtable initially contains the following:",textBox2);
-            PrintKeysAndValues(students);    
+        {
+           
+            listBox1.Items.Add(textBox2.Text);
+
+            //students.Add(textBox2.Text,a);
+           // Console.WriteLine(textBox2);
+            PrintKeysAndValues(students);
+            
         }
 
         public static void PrintKeysAndValues(Hashtable students)
         {
             foreach (DictionaryEntry de in students)
-            Console.WriteLine("    {0}:    {1}", de.Key, de.Value);
+            Console.WriteLine("    {0}:   {1}",de.Key, de.Value);
             Console.WriteLine();
         }
         private void Delete_Click(object sender, EventArgs e)
         {
-            students.Remove(textBox1.Text);
+            
+            listBox1.Items.Remove(textBox1.Text);
             Console.WriteLine("After removing :");
             PrintKeysAndValues(students);
             
@@ -58,6 +63,34 @@ namespace Program
         {
 
         }
+
+        private void list2_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, int> students = new Dictionary<string, int>();
+
+            students.Add("Peter", 67);
+            students.Add("Brayan", 76);
+            students.Add("Lincoln", 56);
+            students.Add("Jack", 65);
+            students.Add("Mahone", 0);
+            students.Add("Kevin", 64);
+
+            foreach (var student in students)
+            {
+                listBox1.Items.Add(student.Key);
+                listBox1.Items.Add(student.Value);
+            }
+
+            
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        
 
         
 
