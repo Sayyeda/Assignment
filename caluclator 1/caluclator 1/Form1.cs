@@ -51,7 +51,7 @@ namespace caluclator_1
 
         }
 
-        private void btnminus_Click(object sender, EventArgs e)
+        private void btnMinus_Click(object sender, EventArgs e)
         {
             if (textBox1.Text != "")
             {
@@ -62,22 +62,22 @@ namespace caluclator_1
             }
         }
 
-        private void btnone_Click(object sender, EventArgs e)
+        private void btnOne_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 1;
         }
 
-        private void bttntwo_Click(object sender, EventArgs e)
+        private void bttnTwo_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 2;
         }
 
-        private void btnthree_Click(object sender, EventArgs e)
+        private void btntThree_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 3;
         }
 
-        private void btnplus_Click(object sender, EventArgs e)
+        private void btnPlus_Click(object sender, EventArgs e)
         {
             num1 = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -85,22 +85,22 @@ namespace caluclator_1
             count = 2;
         }
 
-        private void btnfour_Click(object sender, EventArgs e)
+        private void btnFour_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 4;
         }
 
-        private void btnfive_Click(object sender, EventArgs e)
+        private void btnFive_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 5;
         }
 
-        private void btnsix_Click(object sender, EventArgs e)
+        private void btnSix_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 6;
         }
 
-        private void btnmultiply_Click(object sender, EventArgs e)
+        private void btnMultiply_Click(object sender, EventArgs e)
         {
             num1 = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -108,12 +108,12 @@ namespace caluclator_1
             count = 3;
         }
 
-        private void btnseven_Click(object sender, EventArgs e)
+        private void btnSeven_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 7;
         }
 
-        private void btneight_Click(object sender, EventArgs e)
+        private void btnEight_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 8;
         }
@@ -123,7 +123,7 @@ namespace caluclator_1
             textBox1.Text = textBox1.Text + 9;
         }
 
-        private void btndivide_Click(object sender, EventArgs e)
+        private void btnDivide_Click(object sender, EventArgs e)
         {
             num1 = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -131,12 +131,12 @@ namespace caluclator_1
             count = 4;
         }
 
-        private void btnzero_Click(object sender, EventArgs e)
+        private void btnZero_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 0;
         }
 
-        private void btnperiod_Click(object sender, EventArgs e)
+        private void btnPeriod_Click(object sender, EventArgs e)
         {
             int c = textBox1.TextLength;
             int flag = 0;
@@ -158,7 +158,7 @@ namespace caluclator_1
             }
         }
 
-        private void btnequal_Click(object sender, EventArgs e)
+        private void btnEqual_Click(object sender, EventArgs e)
         {
             compute(count);
         }
