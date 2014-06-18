@@ -20,13 +20,13 @@ namespace caluclator_1
         float num1, ans;
         int count;
 
-        private void btnC_Click_1(object sender, EventArgs e)
+        private void BtnCClick_1(object sender, EventArgs e)
         {
             textBox1.Clear();
             count = 0;
         }
 
-        private void btnCE_Click(object sender, EventArgs e)
+        private void BtnCEClick(object sender, EventArgs e)
         {
 
             if (num1 == 0 && textBox1.TextLength > 0)
@@ -40,7 +40,7 @@ namespace caluclator_1
 
         }
 
-        private void btnback_Click(object sender, EventArgs e)
+        private void BtnbackClick(object sender, EventArgs e)
         {
 
             int lenght = textBox1.TextLength - 1;
@@ -51,7 +51,7 @@ namespace caluclator_1
 
         }
 
-        private void btnMinus_Click(object sender, EventArgs e)
+        private void BtnMinusClick(object sender, EventArgs e)
         {
             if (textBox1.Text != "")
             {
@@ -62,22 +62,22 @@ namespace caluclator_1
             }
         }
 
-        private void btnOne_Click(object sender, EventArgs e)
+        private void BtnOneClick(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 1;
         }
 
-        private void bttnTwo_Click(object sender, EventArgs e)
+        private void BttnTwoClick(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 2;
         }
 
-        private void btntThree_Click(object sender, EventArgs e)
+        private void BtntThreeClick(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 3;
         }
 
-        private void btnPlus_Click(object sender, EventArgs e)
+        private void BtnPlusClick(object sender, EventArgs e)
         {
             num1 = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -85,22 +85,22 @@ namespace caluclator_1
             count = 2;
         }
 
-        private void btnFour_Click(object sender, EventArgs e)
+        private void BtnFourClick(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 4;
         }
 
-        private void btnFive_Click(object sender, EventArgs e)
+        private void BtnFiveClick(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 5;
         }
 
-        private void btnSix_Click(object sender, EventArgs e)
+        private void BtnSixClick(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 6;
         }
 
-        private void btnMultiply_Click(object sender, EventArgs e)
+        private void BtnMultiplyClick(object sender, EventArgs e)
         {
             num1 = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -108,22 +108,22 @@ namespace caluclator_1
             count = 3;
         }
 
-        private void btnSeven_Click(object sender, EventArgs e)
+        private void BtnSevenClick(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 7;
         }
 
-        private void btnEight_Click(object sender, EventArgs e)
+        private void BtnEightClick(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 8;
         }
 
-        private void btnnine_Click(object sender, EventArgs e)
+        private void BtnnineClick(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 9;
         }
 
-        private void btnDivide_Click(object sender, EventArgs e)
+        private void BtnDivideClick(object sender, EventArgs e)
         {
             num1 = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -131,12 +131,12 @@ namespace caluclator_1
             count = 4;
         }
 
-        private void btnZero_Click(object sender, EventArgs e)
+        private void BtnZeroClick(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 0;
         }
 
-        private void btnPeriod_Click(object sender, EventArgs e)
+        private void BtnPeriodClick(object sender, EventArgs e)
         {
             int c = textBox1.TextLength;
             int flag = 0;
@@ -158,7 +158,7 @@ namespace caluclator_1
             }
         }
 
-        private void btnEqual_Click(object sender, EventArgs e)
+        private void BtnEqualClick(object sender, EventArgs e)
         {
             compute(count);
         }
