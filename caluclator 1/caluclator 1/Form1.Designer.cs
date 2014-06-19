@@ -50,6 +50,8 @@
             this.btnequal = new System.Windows.Forms.Button();
             this.btnperiod = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.Help = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -255,19 +257,41 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(12, 231);
+            this.label1.Location = new System.Drawing.Point(12, 271);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(173, 13);
             this.label1.TabIndex = 20;
             this.label1.Text = "Created By Sayyeda Areeba Najam";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // Help
+            // 
+            this.Help.Location = new System.Drawing.Point(12, 230);
+            this.Help.Name = "Help";
+            this.Help.Size = new System.Drawing.Size(75, 23);
+            this.Help.TabIndex = 21;
+            this.Help.Text = "About";
+            this.Help.UseVisualStyleBackColor = true;
+            this.Help.Click += new System.EventHandler(this.AboutClick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(93, 230);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Help";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.HelpClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(238, 263);
+            this.ClientSize = new System.Drawing.Size(235, 293);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Help);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnperiod);
             this.Controls.Add(this.btnequal);
@@ -321,6 +345,8 @@
         private System.Windows.Forms.Button btnequal;
         private System.Windows.Forms.Button btnperiod;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Help;
+        private System.Windows.Forms.Button button1;
 
     }
 }

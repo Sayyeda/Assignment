@@ -201,7 +201,17 @@ namespace caluclator_1
         {
 
         }
-        
-           
+
+        private void AboutClick(object sender, EventArgs e)
+        {
+            MessageBox.Show(" A simple calculator \n Version 1 \n 2014 Sayyeda Copywrite \n All right Reserved");
+
+        }
+
+        private void HelpClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Run the application \n Then enter an appropriate number in the texbox\n Choose an operatin button e.g +");
+
+        }   
     }
 }
